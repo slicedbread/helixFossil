@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<input type="image" src="./helix.png" onclick="myFunction()" width="500" height="517" />
+<p id="input"></p>
+<script>
+function myFunction()
+{
+var str = document.getElementById("input").innerHTML; 
+
+var rand = Math.random();
+
+var buttbuttbuttbutton = "default";
+
+
+if(rand>(0.875)){
+	buttbuttbuttbutton = "up";
+	console.log("up");
+}
+else if(rand>0.75){
+	buttbuttbuttbutton = "down";
+	console.log("down");
+}
+else if(rand>0.625){
+	buttbuttbuttbutton = "left";
+	console.log("left");
+}
+else if(rand>0.5){
+	buttbuttbuttbutton = "right";
+	console.log("right");
+}
+else if(rand>0.375){
+	buttbuttbuttbutton = "a";
+	console.log("a");
+}
+else if(rand>0.25){
+	buttbuttbuttbutton = "b";
+	console.log("b");
+}
+else if(rand>0.125){
+	buttbuttbuttbutton = "start";
+	console.log("start");
+}
+else if(rand>0.0){
+	buttbuttbuttbutton = "select";
+	console.log("select");
+}
+document.getElementById("input").innerHTML=buttbuttbuttbutton;
+
+}
+</script>
+
+</body>
+</html>
